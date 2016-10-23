@@ -1,0 +1,22 @@
+<h2>Categories</h2>
+<div class="container" ng-controller="categoriesCtrl">
+	<div class="row">
+		<div class="col-lg-6" ng-repeat="x in categories">
+			<h3>{{x.name}}</h3>
+			<p class="space">{{x.description}}</p>
+			<a class="btn btn-info" href="#/articles/category/{{x.name}}">View Articles</a>
+		</div>
+	</div>
+</div>
+
+
+<h2>Articles</h2>
+<div class="container" ng-controller="articlesCtrl">
+	<div class="row">
+		<div class="col-lg-6" ng-repeat="x in articles">
+			<h3>{{x.title}} - {{x.category}}</h3>
+			<p class="space">{{x.body | limitTo: 250}}</p>
+			<a class="btn btn-info" href="#/articles/details/{{x._id}}">Read Article</a>
+		</div>
+	</div>
+</div>

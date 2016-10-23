@@ -1,0 +1,15 @@
+
+<div class="container" ng-controller="articleDetailsCtrl">
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8">
+			<h3>{{article.title}}</h3><br>
+			<p>{{article.category}}</p><br>
+			<p>{{article.body}}</p>
+			<span>{{article.date | date: 'MMMM d, y'}}</span><br><br>
+			<a class="btn btn-info" href="#/articles/edit/{{article._id}}">Edit</a>
+			<a class="btn btn-danger" href="#" ng-click="removeArticle()">Delete</a>
+		</div>
+		<div class="col-lg-2"></div>
+	</div>
+</div>

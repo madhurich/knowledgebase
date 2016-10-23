@@ -1,0 +1,26 @@
+/* html{
+	background-image: url('../images/bird.jpg');
+} */
+body {
+  padding: 50px;
+  font: 15px 'Nunito', sans-serif;
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: white;
+  max-height: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+a.corner{
+  /* float: right; */
+  margin-left: 900px;
+  float: right;
+  margin-top: -40px;
+}
+p.space{
+	line-height: 20px;
+}

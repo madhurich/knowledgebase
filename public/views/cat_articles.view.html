@@ -1,0 +1,10 @@
+<h2>{{category}} Articles</h2>
+<div class="container" ng-controller="articlesCategoryCtrl">
+	<div class="row">
+		<div class="col-lg-12" ng-repeat="x in cat_articles">
+			<h3>{{x.title}}</h3>
+			<p>{{x.body}}</p>
+			<a href="#/articles/details/{{x._id}}">Read Articles</a>
+		</div>
+	</div>
+</div>
